@@ -9,8 +9,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 export default  function All() {
-   const[products , setProducts]  = useState<Product[]>([])
-
+  const [products, setProducts] = useState<Product[]>([]);
+  
   useEffect(() => {
      async function FetchData(){
       const Fetched : Product[] = await client.fetch(allProducts)
